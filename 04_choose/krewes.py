@@ -10,10 +10,13 @@ OPS SUMMARY: Randomly choose one of the keys from the given dictionary, then gra
 '''
 import random as rand
 
-krewes = {2:["a"]}
+krewes = {2:["a","b","c"],7:["d","f","g"]}
 def chooseDevo(dict):
-    pds = [2]
+    pds = [2,7]
     key = rand.choice(pds)
-    print(key)
+    #print(key)
+    devoList = krewes[key]
+    #print(devoList)
+    return rand.choice(devoList)
 
-chooseDevo(krewes)
+print(chooseDevo(krewes))

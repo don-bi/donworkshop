@@ -6,7 +6,14 @@ K<nn> -- <Title/Topic/Summary... (Aim for concision, brevity, CLARITY. Write to 
 time spent: <elapsed time in hours, rounded to nearest tenth>
 DISCO:
 QCC:
-OPS SUMMARY: Randomly choose between 2, 7, and 8 to 
+OPS SUMMARY: Randomly choose one of the keys from the given dictionary, then grab the associated list and randomly choose a devo from the elements in the list. 
 '''
+import random as rand
 
+krewes = {2:["a"]}
 def chooseDevo(dict):
+    pds = [2]
+    key = rand.choice(pds)
+    print(key)
+
+chooseDevo(krewes)

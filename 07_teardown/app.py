@@ -21,6 +21,7 @@ app.run()  # Q5: Where have you seen similar constructs in other languages?
 '''
 DISCO:
 -__NAME__ is an object in regular python
+-"No hablo queso!" is put into the body of the html script.
 QCC:
 0. This looks like initializing an object in java.
 1. / is usually used for separating directories. '/' on its own is also referring to the current directory.

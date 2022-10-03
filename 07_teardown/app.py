@@ -34,4 +34,5 @@ QCC:
 INVESTIGATIVE APPROACH:
 We thought about the languages we've learned collaboratively.
 We also ran the code and visited the live server demo to see what's on it.
+We inspected the web server to see what's on the html.
 '''

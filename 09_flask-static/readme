@@ -1,0 +1,7 @@
+Predictions: 
+Runnig localhost:5000/static/foo and Running localhost:5000/static/foo.html : Shows whats in the file when you go to the static webpage
+
+
+What it does: 
+Runnig localhost:5000/static/foo : Downloads the file
+Running localhost:5000/static/foo.html : Shows the html file

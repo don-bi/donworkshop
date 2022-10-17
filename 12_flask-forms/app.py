@@ -53,7 +53,7 @@ def authenticate():
     print("***DIAG: request obj ***")
     print(request)
     print("***DIAG: request.args ***")
-    print(request.args)
+    print(request.form)
     #print("***DIAG: request.args['username']  ***")
     #print(request.args['username']) #works in authenticate() because username is given
     print("***DIAG: request.headers ***")

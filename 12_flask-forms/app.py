@@ -30,7 +30,6 @@ PROTIP: Insert your own in-line comments
   your future self and/or current teammates
    understand what is going on.
 '''
-
 @app.route("/" , methods=['GET', 'POST'])
 def disp_loginpage():
     print("\n\n\n")
@@ -46,7 +45,6 @@ def disp_loginpage():
     print(request.headers) #Browser and OS of the user
     return render_template( 'login.html' )
 
-
 @app.route("/auth", methods=['GET', 'POST'])
 def authenticate():
     print("\n\n\n")
@@ -55,12 +53,14 @@ def authenticate():
     print("***DIAG: request obj ***")
     print(request)
     print("***DIAG: request.args ***")
-    print(request.form)
-    print("***DIAG: request.args['username']  ***")
-    print(request.args['username']) #works in authenticate() because username is given
+    print(request.args)
+    #print("***DIAG: request.args['username']  ***")
+    #print(request.args['username']) #works in authenticate() because username is given
     print("***DIAG: request.headers ***")
     print(request.headers)
-    return render_template( 'response.html' )  #response to a form submission
+    
+    username = request.form.get('username')
+    return render_template( 'response.html', user = username )  #response to a form submission
 
 
     

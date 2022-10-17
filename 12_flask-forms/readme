@@ -1,0 +1,13 @@
+In disp_loginpage()
+
+print(app) : prints name of the Flask module
+print(request.args) : prints dictionary with the user's input on the webpage
+print("***DIAG: request.args['username']  ***") : nothing showing up in the terminal
+print(request.args['username']) : Uncommenting it results in a failure becuase a username isn't given
+print(request.headers) : Browser and OS of the user
+
+
+
+In authenticate()
+
+print(request.args['username']) : works in authenticate() because username is given

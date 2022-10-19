@@ -1,9 +1,9 @@
 """
-Rice Explosion: Donald Bi, Wilson Mach, Nakib Abedin
+Dual Ducks: Donald Bi, Brian/Paul Yang, Faiyaz Rafee
 SoftDev
-K12 -- Take and give
-2022-10-17
-time spent: .8 hrs
+K11 -- Flask/html forms
+2022-10-14
+time spent: .5 hrs
 """
 from flask import Flask             #facilitate flask webserving
 from flask import render_template   #facilitate jinja templating

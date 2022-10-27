@@ -1,19 +1,9 @@
 '''
 RICE EXPLOSION :: Nakib Abedin, Wilson Mach, Donald Bi
-SoftDev  
+SoftDev
 k18:: SQLITE3 BASICS
 Time Spent: 1.5 hrs
 2022-10-25
-
-DISCO:
--fstrings can help add data into the table without concatenation
--drop table helps solve the issue with the table already existing
--learned how to use sqlite3 in python file
--we can use fetchall() to print the tables in python
--we can use open() with DictReader to go through a csv file
-
-QCC:
--what exactly does fetchall() do to allow us to print it?
 '''
 
 import sqlite3   #enable control of an sqlite database
@@ -44,7 +34,7 @@ c.execute("CREATE table students (name TEXT, age int, id int)")
 with open("students.csv", newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
-        c.execute(f"INSERT into students values (\"{row['name']}\",{row['age']},{row['id']})")        
+        c.execute(f"INSERT into students values (\"{row['name']}\",{row['age']},{row['id']})")
 
 command = ""          # test SQL stmt in sqlite3 shell, save as string
 c.execute(command)    # run SQL statement
@@ -62,5 +52,3 @@ pp.pprint(c.fetchall())
 
 db.commit() #save changes
 db.close()  #close database
-
-

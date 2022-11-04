@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <form action="/login" method="POST">
+        Rice Explosion: Nakib Abedin, Donald Bi, Wilson Mach
+        <br>
+        Username:
+        <input type="text" name="username">
+        password:
+        <input type="text" name="password">
+        <input type="submit" name="sub" value="log in">
+        <br>
+        {% if error == 'wrong username' %}
+        Username not found!!!
+        {% endif %}
+        {% if error == 'wrong password' %}
+        Wrong password!!!
+        {% endif %}
+    </form>
+</body>
+</html>

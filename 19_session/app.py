@@ -10,7 +10,7 @@ correct_password = "troll123"
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
-    if correct_username in session:
+    if 'username' in session:
         print(session['username'])
         return render_template('response.html', username = session['username'])
     return render_template('login.html') #for rendering login page intially
@@ -22,10 +22,10 @@ def login():
         username = request.form['username']   
         password = request.form['password']
 
-        if username == correct_username:
-            if password == correct_password:
-                session['username'] = username
-                print(session['username'])
+        if username == correct_username: #checks for correct username
+            if password == correct_password: #checks for correct password
+                session['username'] = username #makes cookie for username
+                #print(session['username']) #testing
                 return render_template('response.html', username = username, password = password)
             return render_template('login.html', error = 'wrong password')
         return render_template('login.html', error = 'wrong username')

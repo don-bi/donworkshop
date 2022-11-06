@@ -1,0 +1,13 @@
+Rice Explosion: Nakib Abedin, Donald Bi, Wilson Mach
+SoftDev
+K19 -- working w/ sessions
+2022-11-04
+time spent: .7
+
+DISCO:
+- we can use if 'username' in session: to see if the username is logged in or not
+- sessions do not work without a secret key
+- sessions work when closing the tab and reloading it again but not after the server stops running
+
+QCC:
+- do we have to use if 'username' in session for each route of our app if we want logged in sessions or is there an easier way?

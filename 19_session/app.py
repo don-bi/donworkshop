@@ -1,3 +1,10 @@
+'''
+Rice Explosion: Nakib Abedin, Donald Bi, Wilson Mach
+SoftDev
+K19 -- working w/ sessions
+2022-11-04
+time spent: .7
+'''
 from flask import Flask,render_template,request,session
 
 app = Flask(__name__)

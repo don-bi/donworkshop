@@ -22,7 +22,7 @@ def hello():
     print("hi")
     print(jason)
     #dict = json.loads(jason)
-    return render_template("main.html", url = jason["url"]) 
+    return render_template("main.html", url = jason["url"], txt = jason["explanation"]) 
     
 if __name__ == "__main__":
     app.debug = True

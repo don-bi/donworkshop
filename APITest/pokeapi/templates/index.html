@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokemon</title>
+</head>
+<body>
+    <div class="sprites">
+        <img src="{{sprite}}" alt="">
+        <img src="{{shiny}}" alt="">
+    </div>
+    <h1>{{name}}</h1>
+    <h2>Pokedex #{{pokedex}}</h2>
+    <div>{{flavor_text}}</div>
+    <div class="types">
+        <h2>TYPES</h2>
+        {% for type in types %}
+        <div class="type">{{type}}</div>
+        {% endfor %}
+    </div>
+</body>
+</html>
